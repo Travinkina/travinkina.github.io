@@ -1,0 +1,684 @@
+*
+    box-sizing: border-box
+    outline: none
+
+a
+    text-decoration: none
+    color: inherit
+
+.hidden
+    visibility: hidden
+
+a, button
+    cursor: pointer
+
+input, button
+    display: inline-block
+    border: none
+    padding: 0
+    background: none
+
+p, ul, h1, h2, h3, h4, h5, h6, ol
+    padding: 0
+    margin: 0
+    font-weight: normal
+
+ul, ol
+    list-style: none
+
+body
+    font-family: Gilroy, Arial, Helvetica, sans-serif
+    background-color: #fff
+    margin: 0
+
+.header
+    background:
+        image: url(../img/bg/header-bg.png)
+        size: cover
+        repeat: no-repeat
+        position: top center
+    padding-bottom: 230px
+    color: #ffffff
+    &-top
+        padding-top: 25px
+        padding-bottom: 25px
+        border-bottom: 1px solid rgba(255,255,255, 0.15)
+        text-align: center
+        &__img
+            display: block
+            height: 37px
+            width: 260px
+        &-contact
+            display: inline-flex
+            align-items: center
+            &__img
+                display: inline-block
+                width: 15px
+                height: 15px
+                margin-right: 10px
+                margin-left: 28px
+            &__link
+                font-size: 18px
+                line-height: 1.2
+                text-transform: lowercase
+                font-weight: 400
+        &__btn
+            display: inline
+            border: 1px solid #FFB75E
+            border-radius: 9999px
+            padding-top: 16px
+            padding-bottom: 16px
+            padding-left: 24px
+            padding-right: 24px
+            font-size: 18px
+            text-align: center
+            color: #ffffff
+            line-height: 1
+    &-bottom
+        margin-top: 100px
+        &__title
+            font-family: PT Serif
+            font-size: 38px
+            text-transform: uppercase
+            line-height: 1.5
+            &--bold
+                font-weight: 700
+        &-stock
+            margin-top: 68px
+            border-left: 4px solid #FFB75E
+            padding-left: 25px
+            padding-top: 5px
+            padding-bottom: 5px
+            display: inline-block
+            &__title
+                font-family: PT Serif
+                font-size: 24px
+                line-height: 1
+                font-weight: 700
+                margin-bottom: 15px
+            &__desc
+                font-size: 16px
+                line-height: 1.5
+                color: #DFDFDF
+
+        &-features
+            margin-top: 72px
+            &-card
+                display: inline-flex
+                align-items: center
+                margin-right: 100px
+                &:nth-child(1)
+                    display: flex
+                    margin-bottom: 44px
+                &__img
+                    display: inline-block
+                    width: 60px
+                    height: 60px
+                    margin-right: 25px
+                &__title
+                    font-size: 18px
+                    line-height: 1.5
+        &-offer
+            box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.3)
+            border-radius: 10px
+            background: rgba(0,0,0,0.65)
+            padding-top: 38px
+            padding-bottom: 50px
+            padding-left: 35px
+            padding-right: 35px
+            &__title
+                text-align: center
+                font-size: 26px
+                line-height: 1.4
+                margin-bottom: 5px
+            &__subtitle
+                color: #DFDFDF
+                text-align: center
+                line-height: 1.5
+                font-size: 16px
+            &-form
+                margin-top: 25px
+                display: flex
+                flex-direction: column
+                &__input
+                    margin-bottom: 20px
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+                    padding-bottom: 13px
+                    padding-left: 40px
+                    text-transform: uppercase
+                &__file
+                &__btn
+                    background: linear-gradient(180deg, #FFB75E 0%, #ED8F03 100%)
+                    box-shadow: 0px 3px 0px #C67702
+                    border-radius: 9999px
+                    padding-top: 14px
+                    padding-bottom: 14px
+                    color: #fff
+                    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35)
+                    line-height: 1.2
+                    font-size: 16px
+                    font-weight: 700
+                    margin-top: 20px
+                    margin-bottom: 20px
+                &__checkbox-hidden
+                &__check-box
+                &__desc
+                &__link
+
+.main
+.why
+    color: #0F0F0F
+    padding-bottom: 55px
+    &__title
+        font-family: PT Serif
+        margin-top: 103px
+        font-size: 45px
+        line-height: 1.3
+        text-align: center
+        &--orange
+            color: #FFB75E
+    &-features
+        margin-top: 70px
+        &-card
+            display: flex
+            align-items: center
+            margin-bottom: 60px
+            &__img
+                width: 100px
+                height: 100px
+                margin-right: 30px
+            &__desc
+                color: #444444
+                font-size: 18px
+                line-height: 1.5
+
+.products
+    background:
+        image: url(../img/bg/products-bg.svg)
+        size: cover
+        repeat: no-repeat
+        position: top center
+    padding-top: 96px
+    padding-bottom: 100px
+    &__title
+        font-family: PT Serif
+        color: #0F0F0F
+        font-size: 45px
+        line-height: 1.5
+        text-align: center
+    &-wrap
+        display: flexbox
+        margin-top: 70px
+        justify-content: space-between
+        
+        &-card
+            display: flex
+            position: relative
+            height: 250px
+            margin-top: 15px
+            
+            &__img
+                position: absolute
+                z-index: 1
+                border-radius: 5px
+                width: 100%
+                // &::after
+                //     content: ''
+                //     display: block
+                //     background: linear-gradient(40.85deg, rgba(0, 0, 0, 0.6) 20.14%, rgba(0, 0, 0, 0) 61.79%)
+                
+            &-bottom
+                display: flex
+                position: relative
+                z-index: 2
+                align-self: flex-end
+                justify-content: space-between
+                padding-bottom: 22px
+                padding-left: 35px
+                padding-right: 30px
+                width: 100%
+                &-link
+                    
+                    &__title
+                        display: inline-flex
+                        font-size: 28px
+                        line-height: 1.3
+                        font-weight: 700
+                        color: #FFFFFF
+                        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25)
+                    &__img
+                        display: inline-flex
+                        justify-content: center
+                        align-items: center
+                        width: 40px
+                        height: 40px
+                        border: 4px solid #FFFFFF
+                        border-radius: 50%
+                        &::before
+                            content: ''
+                            display: block
+                            width: 15px
+                            height: 15px
+                            border-top: 1px solid #FFFFFF
+                            border-right: 1px solid #FFFFFF
+                            transform: rotate(45deg)
+                            margin-top: 10px
+                            margin-left: 7px
+                            
+                            
+
+.optimum
+    padding-top: 120px
+    padding-bottom: 120px
+
+    &__title
+        font-family: PT Serif
+        font-size: 45px
+        line-height: 1.3
+        text-align: center
+        text-transform: uppercase
+        &--orange
+            font-weight: 700
+            color: #FFB75E
+    &-step-1
+        margin-top: 70px
+        &__title
+            font-weight: bold
+            font-size: 26px
+            line-height: 1.5
+            border-left: 4px solid #FFB75E
+            padding-left: 16px
+        &-table
+            margin-top: 53px
+            &-row
+                display: flex
+                border-bottom: 1px solid #EEEEEE
+                align-items: center
+                &-cell
+                    text-align: center
+                    padding-bottom: 15px
+                    padding-top: 15px
+                    width: 25%
+                    height: 100%
+                    border-left: 1px solid #EEEEEE            
+                    &:nth-child(1)
+                        text-align: left
+                        border-left: none
+                    &__desc
+                        font-size: 20px
+                        line-height: 1.5
+                    &__img
+                        width: 36px
+                        height: 36px
+    &-step-2
+        margin-top: 100px
+        &-wrap
+            margin-top: 50px
+            &-card
+                height: 195px
+                &__img
+                    width: 100%
+                    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
+                    border-radius: 10px
+    &-step-3
+        margin-top: 100px
+        &-wrap
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            margin-top: 50px
+            &-card
+               margin-right: 10px 
+               margin-bottom: 10px
+               &__img
+                    width: 210px    
+                    height: 139px
+                    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
+                    border-radius: 10px
+    &-step-4
+        margin-top: 100px
+        &-wrap
+            margin-top: 50px
+            &-card
+                height: 276px 
+                &__img
+                    width: 100% 
+                    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
+                    border-radius: 10px
+                    
+                    
+    &__btn
+        display: block
+        margin: 0 auto
+        margin-top: 70px
+        text-align: center
+        font-weight: bold
+        font-size: 16px
+        line-height: 1.2
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35)
+        background: linear-gradient(180deg, #FFB75E 0%, #ED8F03 100%)
+        box-shadow: 0px 3px 0px #C67702
+        border-radius: 9999px
+        color: #FFFFFF
+        padding-top: 20px
+        padding-bottom: 20px
+        padding-right: 50px
+        padding-left: 50px
+        align-items: center
+
+.stock
+    background:
+        image: url(../img/bg/stock-bg.png)
+        size: cover
+        repeat: no-repeat
+        position: top center
+    padding-top: 151px
+    padding-bottom: 151px
+    &__title
+        font-family: PT Serif
+        font-weight: 400
+        font-size: 45px
+        line-height: 1.3
+        text-transform: uppercase
+        color: #000000
+        &--orange
+            font-weight: 700
+            color: #FFB75E
+    &-discount
+        display: flex
+        margin-top: 21px
+        align-items: center
+        &__img
+            width: 60px
+            height: 60px
+            margin-right: 25px
+        &__desc
+            display: inline-block
+            font-size: 20px
+            line-height: 1.5
+            &--bold
+                font-weight: 500
+    &-timer
+        margin-top: 25px
+        &__title 
+            font-weight: 700
+            font-size: 22px
+            line-height: 1.5
+    &--repeat
+        background-image: url('../img/bg/att-stock-bg.png')
+
+.examples
+    &__title
+        font-family: PT Serif
+        font-weight: 400
+        font-size: 45px
+        line-height: 1.3
+        text-align: center
+        text-transform: uppercase
+        &--orange
+            font-weight: 700
+            color: #FFB75E
+
+.order
+    background:
+        image: url(../img/bg/order-bg.png)
+        size: cover
+        repeat: no-repeat
+        position: top center
+    padding-top: 100px
+    padding-bottom: 100px
+    &__title
+        font-family: PT Serif
+        font-size: 45px
+        line-height: 1.3
+        text-align: center
+        text-transform: uppercase
+        color: #0F0F0F
+    &-list
+        display: flex
+        margin-top: 85px
+        flex-direction: row
+        justify-content: space-between
+        &-card
+            &__img
+                width: 180px
+                height: 180px
+                filter: drop-shadow(0px 7px 15px rgba(0, 0, 0, 0.1))
+                border-radius: 10px
+            &__title
+                margin-top: 35px
+                font-weight: bold
+                font-size: 22px
+                line-height: 1.5
+                text-align: center
+                color: #0F0F0F
+
+.benefit
+    padding-top: 102px
+    padding-bottom: 120px
+    &__title
+        font-family: PT Serif
+        font-size: 45px
+        line-height: 1.3
+        text-align: center
+        text-transform: uppercase
+        &--orange
+            color: #FFB75E
+            font-weight: bold
+    &-module
+        display: flex
+        margin-top: 100px
+        &:nth-child(1)
+            margin-top: 70px
+        
+            
+        &-card
+            display: flex
+            margin-top: 50px
+            border: 1px solid #FFB75E
+            padding-top: 19px
+            padding-bottom: 19px
+            padding-right: 19px
+            padding-left: 19px
+            align-items: center
+            width: 488px
+            &:nth-child(1)
+                margin-top: 0
+            &__number
+                align-items: center
+                font-weight: bold
+                font-size: 64px
+                line-height: 1
+                color: #FFB75E
+                margin-left: -60px
+                background-color: #fff
+            &-wrap
+                display: inline-block
+                background: #F8F8F8
+                margin-left: 0px
+                padding-top: 19px
+                padding-bottom: 21px
+                padding-left: 44px
+                width: 92%
+                &__title
+                    font-weight: bold
+                    font-size: 22px
+                    line-height: 1.5
+                    color: #0F0F0F
+                &__desc
+                    font-size: 16px
+                    line-height: 1.5
+                    color: #444444
+        &__bracket
+            align-self: flex-start
+            font-weight: 300
+            font-size: 300px
+            line-height: 1.15
+            color: #FFB75E
+        &__subtitle 
+            font-weight: bold
+            font-size: 72px
+            line-height: 1.5
+            text-transform: uppercase
+            color: #FFB75E
+            text-align: center
+            margin: auto
+            &--transparent
+                color: #fff
+                text-shadow: #F5F5F5 1px 1px 0, #F5F5F5 -1px -1px 0, #F5F5F5 -1px 1px 0, #F5F5F5 1px -1px 0
+            &--gray
+                color: #F8F8F8
+
+.guarantees
+    padding-top: 120px
+    padding-bottom: 120px
+
+    &__title
+        font-family: PT Serif
+        font-size: 45px
+        line-height: 1.3
+        text-align: center
+        text-transform: uppercase
+        color: #0F0F0F
+    &-wrap
+        margin-top: 40px
+        
+        &-card
+            display: flex
+            margin-top: 30px
+            position: relative
+            height: 370px
+            justify-content: center
+            align-items: center
+            background-color: #fff
+            border-radius: 10px
+            box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
+
+            &--orange
+                background-color: #FFB75E
+             
+            &__img
+                position: absolute
+                top: 30px
+                right: 30px
+                width: 310px
+                height: 310px
+                z-index: 1
+                
+                
+            &-inside
+                position: relative
+                z-index: 2
+                &__img
+                    width: 70px
+                    height: 70px
+                &__title
+                    margin-top: 15px
+                    font-weight: 700
+                    font-size: 22px
+                    line-height: 1.5
+                    color: #0F0F0F
+                &__desc
+                    margin-top: 10px
+                    font-size: 16px
+                    line-height: 1.5
+                    color: #444444
+
+.reviews
+    background:
+        image: url(../img/bg/reviews-bg.png)
+        size: cover
+        repeat: no-repeat
+        position: top center
+    padding-top: 100px
+    padding-bottom: 100px
+    &__title
+        font-family: PT Serif
+        font-weight: 400
+        font-size: 45px
+        line-height: 1.3
+        text-align: center
+        text-transform: uppercase
+        
+        &--orange
+            font-weight: 700
+            color: #FFB75E
+
+.answers
+    padding-top: 405px
+    &__title
+        font-family: PT Serif
+        font-weight: 400
+        font-size: 45px
+        line-height: 1.3
+        text-align: center
+        text-transform: uppercase
+        &--orange
+            font-weight: 700
+            color: #FFB75E
+
+.contacts
+    padding-top: 120px
+    padding-bottom: 100px
+    &__title
+        font-family: PT Serif
+        font-weight: 400
+        font-size: 45px
+        line-height: 1.3
+        text-align: center
+        text-transform: uppercase
+    &-wrap
+        margin-top: 70px
+        
+        &-card
+            
+            &-img
+                height: 70px
+                width: 70px
+                padding: 20px
+                border-radius: 50%
+                background-color: #F8F8F8
+                &__img
+                    width: 30px
+                    height: 30px
+                   
+            &__title
+                margin-top: 15px
+                font-weight: bold;
+                font-size: 22px
+                line-height: 1.5
+                color: #0F0F0F
+            &__desc
+                margin-top: 6px
+                font-size: 18px
+                line-height: 1.5
+                color: #0F0F0F
+
+            &__link
+                margin-top: 6px
+                font-size: 18px
+                line-height: 1.5
+                color: #0F0F0F
+                text-transform: lowercase
+    
+.map
+    display: flex
+    justify-content: center
+    &__img
+    
+.footer
+    background: #FFB75E
+    padding-top: 17px
+    padding-bottom: 17px
+    &-bottom
+        display: flex
+        justify-content: space-between
+
+        &__desc         
+            font-size: 16px
+            line-height: 1
+            color: #444444
+        &__link
+            text-decoration: underline
+            color: #444444
+            
